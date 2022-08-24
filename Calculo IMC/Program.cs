@@ -15,7 +15,7 @@ namespace IMCcalculator
             Console.WriteLine("Digite sua altura:");
             altura = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-            imc = peso / (altura * 2);
+            imc = peso / (altura * altura);
 
             Console.WriteLine("Seu indice de massa coporal é: " + imc.ToString("F2", CultureInfo.InvariantCulture));
 
